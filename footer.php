@@ -15,12 +15,12 @@
                         <?php if ( has_nav_menu('footer_menu') ) { wp_nav_menu( array( 'theme_location' => 'footer_menu', 'depth' => 1, 'container' => 'div', 'container_class' => 'footer-more-list text-center mb-3 d-none d-sm-block', 'menu_class' => null, 'container_id' => null) ); } ?>
                         <div class="text-center text-muted">
                             <div class="copyright">
-                                <small>© 2018 <?php bloginfo('name'); ?>. All Rights Reserved.</small>
+                                <small>© 2018-<?php echo date("Y "); bloginfo('name'); ?>. All Rights Reserved.</small>
                                 <small class="license mt-2">Theme Dobby Made By Vtrois.</small>
                             </div>
                             <div class="miitbeian mt-2">
                                 <?php if( dobby_option('footer_icp_num') ) {?>
-                                <small class="mx-1 text-muted"><a href="http://www.miitbeian.gov.cn/" rel="external nofollow" target="_blank"><?php echo dobby_option( 'footer_icp_num' ); ?></a></small>
+                                <small class="mx-1 text-muted"><a href="http://www.beian.miit.gov.cn/" rel="external nofollow" target="_blank"><?php echo dobby_option( 'footer_icp_num' ); ?></a></small>
                                 <?php } if( dobby_option('footer_gov_num') ) {?>
                                 <small class="mx-1 text-muted"><a href="<?php echo dobby_option( 'footer_gov_link' ); ?>" rel="external nofollow" target="_blank"><?php echo dobby_option( 'footer_gov_num' ); ?></a></small>
                                 <?php }?>
